@@ -8,5 +8,6 @@ document.getElementById('login-btn')
         }
         else {
             alert('Login failed...!');
+            return;
         }
     });
