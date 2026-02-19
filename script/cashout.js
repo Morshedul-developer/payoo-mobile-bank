@@ -1,27 +1,27 @@
 document.getElementById('cashout-btn')
     .addEventListener('click',function(){
-        const agentNumber = document.getElementById('agent-input').value;
+        const agentNumber = getValueFromInput("agent-input");
 
         if(agentNumber.length != 11) {
             alert("Invalid Agent Number...");
             return;
         }
 
-        const mainBalance = document.getElementById('balance');
-        const balance = mainBalance.innerText;
-        const cashoutAmount = document.getElementById('amount-input').value;
-        const newBalance = Number(balance) - Number(cashoutAmount);
+        const mainBalance = getBalance();
+        const cashoutAmount = getValueFromInput('amount-input');
+
+        const newBalance = mainBalance - Number(cashoutAmount);
         
         if(newBalance < 0) {
             alert("Invalid amount...");
             return;
         }
 
-        const pin = document.getElementById('pin-input').value;
+        const pin = getValueFromInput('pin-input');
 
         if(pin == '1234') {
             alert('Cashout successful...');
-            mainBalance.innerText = newBalance;
+            setBalance(newBalance);
         }
         else {
             alert('Invalid PIN...');
