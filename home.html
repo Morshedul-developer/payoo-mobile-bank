@@ -105,11 +105,11 @@
             <label class="label text-[14px] font-medium text-neutral mb-1"
               >Select A Bank</label
             >
-            <select class="select w-full bg-base-200 text-gray-500/90 rounded-full mb-2">
+            <select id="add-money-bank" class="select w-full bg-base-200 text-gray-500/90 rounded-full mb-2">
               <option disabled selected>Select bank</option>
-              <option value="dbbl">DBBL</option>
-              <option value="ab">AB Bank</option>
-              <option value="city">City Bank</option>
+              <option value="DBBL">DBBL</option>
+              <option value="AB Bank">AB Bank</option>
+              <option value="City Bank">City Bank</option>
             </select>
 
             <label class="label text-[14px] font-medium text-neutral mb-1"
@@ -143,7 +143,7 @@
               maxlength="4"
             />
             <button
-              id="cashout-btn"
+              id="add-money-btn"
               class="btn btn-neutral mt-4 rounded-full text-[16px] bg-primary border-none"
             >
               Add Money
@@ -201,6 +201,7 @@
     </section>
 
     <script src="./script/machine.js"></script>
+    <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
   </body>
 </html>
