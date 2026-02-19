@@ -90,7 +90,7 @@
           <img src="./assets/opt-5.png" alt="" />
           <p>Pay Bill</p>
         </button>
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('transaction')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-6.png" alt="" />
           <p>Transactions</p>
         </button>
@@ -184,7 +184,7 @@
               >Pin Number</label
             >
             <input
-              id="pin-input"
+              id="pin-cashout"
               type="password"
               class="input bg-base-200 rounded-full w-full"
               placeholder="Enter 4 Digit Pin"
@@ -200,6 +200,14 @@
         </div>
       </div>
     </section>
+
+    <!-- transactions -->
+     <section id="transaction" class="w-11/12 mx-auto pb-12 hidden">
+      <h3 class="text-[18px] font-semibold mb-4">Transaction History</h3>
+      <div id="history-container">
+        
+      </div>
+     </section>
 
     <script src="./script/machine.js"></script>
     <script src="./script/addMoney.js"></script>

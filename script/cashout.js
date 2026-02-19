@@ -17,11 +17,24 @@ document.getElementById('cashout-btn')
             return;
         }
 
-        const pin = getValueFromInput('pin-input');
+        const pin = getValueFromInput('pin-cashout');
+        console.log(pin);
 
         if(pin == '1234') {
             alert('Cashout successful...');
             setBalance(newBalance);
+
+            // transaction
+            const history = document.getElementById('history-container');
+            const newHistory = document.createElement('div');
+            newHistory.innerHTML = `
+            <div class="bg-base-100 p-5 rounded-lg">
+            <p>CashOut successful 
+                form ${agentNumber}
+                at ${new Date()}</p>
+            </div>
+            `;
+            history.appendChild(newHistory);
         }
         else {
             alert('Invalid PIN...');

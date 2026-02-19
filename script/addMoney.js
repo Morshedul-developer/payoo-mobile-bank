@@ -20,6 +20,18 @@ document.getElementById('add-money-btn')
                 form ${bank}
                 at ${new Date()}`);
             setBalance(newBalance);
+
+            // transaction
+            const history = document.getElementById('history-container');
+            const newHistory = document.createElement('div');
+            newHistory.innerHTML = `
+            <div class="bg-base-100 p-5 rounded-lg">
+            <p>Add money successful 
+                form ${bank}
+                at ${new Date()}</p>
+            </div>
+            `;
+            history.appendChild(newHistory);
         }
         else{
             alert('Invalid PIN...');
