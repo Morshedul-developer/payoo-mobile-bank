@@ -201,6 +201,53 @@
       </div>
     </section>
 
+    <!-- send money -->
+     <section id="send-money" class="w-11/12 mx-auto pb-12">
+      <h3 class="text-[18px] font-semibold mb-4">Send Money</h3>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >User Account Number</label
+            >
+            <input
+              id="send-money-ac"
+              type="text"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Enter 11 digit number"
+              maxlength="11"
+              minlength="11"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Amount</label
+            >
+            <input
+              id="send-money-amount"
+              type="number"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Enter amount to withdraw"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Pin Number</label
+            >
+            <input
+              id="send-money-pin"
+              type="password"
+              class="input bg-base-200 rounded-full w-full"
+              placeholder="Enter 4 Digit Pin"
+              maxlength="4"
+            />
+            <button
+              id="send-money-btn"
+              class="btn btn-neutral mt-4 rounded-full text-[16px] bg-primary border-none"
+            >
+              Send Now
+            </button>
+          </fieldset>
+        </div>
+      </div>
+     </section>
+
     <!-- transactions -->
      <section id="transaction" class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Transaction History</h3>
@@ -212,5 +259,6 @@
     <script src="./script/machine.js"></script>
     <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/sendMoney.js"></script>
   </body>
 </html>
