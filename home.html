@@ -82,7 +82,7 @@
           <img src="./assets/opt-3.png" alt="" />
           <p>Send Money</p>
         </button>
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('get-bonus')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-4.png" alt="" />
           <p>Get Bonus</p>
         </button>
@@ -248,6 +248,32 @@
       </div>
      </section>
 
+     <!-- get bonus -->
+      <section id="get-bonus" class="w-11/12 mx-auto pb-12 hidden">
+        <h3 class="text-[18px] font-semibold mb-4">Get Bonus</h3>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Enter Bonus Coupon</label
+            >
+            <input
+              id="get-bonus-input"
+              type="text"
+              class="input bg-base-200 rounded-full w-full"
+              placeholder="Enter your coupon"
+            />
+            <button
+              id="get-bonus-btn"
+              class="btn btn-neutral mt-4 rounded-full text-[16px] bg-primary border-none"
+            >
+              Get Bonus
+            </button>
+          </fieldset>
+        </div>
+      </div>
+      </section>
+
     <!-- transactions -->
      <section id="transaction" class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Transaction History</h3>
@@ -260,5 +286,6 @@
     <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/sendMoney.js"></script>
+    <script src="./script/getBonus.js"></script>
   </body>
 </html>
