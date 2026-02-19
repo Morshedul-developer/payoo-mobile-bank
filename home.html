@@ -59,6 +59,7 @@
       </section>
     </header>
 
+    <!-- buttons -->
     <section class="w-11/12 mx-auto pt-9 pb-5">
       <h1 class="text-4xl font-bold leading-[30px] mb-4">
         Welcome to Pay<span class="text-primary">oo</span>
@@ -69,11 +70,11 @@
       </p>
 
       <div class="buttons grid grid-cols-3 gap-4">
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('add-money')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-1.png" alt="" />
           <p>Add Money</p>
         </button>
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('cash-out')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-2.png" alt="" />
           <p>Cashout</p>
         </button>
@@ -97,7 +98,7 @@
     </section>
 
     <!-- add money -->
-    <section class="w-11/12 mx-auto pb-12">
+    <section id="add-money" class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Add Money</h3>
       <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
@@ -154,7 +155,7 @@
     </section>
 
     <!-- cashOut -->
-    <section class="w-11/12 mx-auto pb-12 hidden">
+    <section id="cash-out" class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Cash Out</h3>
       <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
