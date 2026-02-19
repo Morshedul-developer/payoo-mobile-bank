@@ -78,7 +78,7 @@
           <img src="./assets/opt-2.png" alt="" />
           <p>Cashout</p>
         </button>
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('send-money')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-3.png" alt="" />
           <p>Send Money</p>
         </button>
@@ -202,7 +202,7 @@
     </section>
 
     <!-- send money -->
-     <section id="send-money" class="w-11/12 mx-auto pb-12">
+     <section id="send-money" class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Send Money</h3>
       <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
