@@ -96,11 +96,67 @@
       </div>
     </section>
 
+    <!-- add money -->
     <section class="w-11/12 mx-auto pb-12">
+      <h3 class="text-[18px] font-semibold mb-4">Add Money</h3>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Select A Bank</label
+            >
+            <select class="select w-full bg-base-200 text-gray-500/90 rounded-full mb-2">
+              <option disabled selected>Select bank</option>
+              <option value="dbbl">DBBL</option>
+              <option value="ab">AB Bank</option>
+              <option value="city">City Bank</option>
+            </select>
+
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Bank Account Number</label
+            >
+            <input
+              id="ac-number"
+              type="text"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Enter 11 digit account number"
+              maxlength="11"
+              minlength="11"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Amount to Add</label
+            >
+            <input
+              id="add-amount"
+              type="number"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Add Amount to withdraw"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Pin Number</label
+            >
+            <input
+              id="pin-input"
+              type="password"
+              class="input bg-base-200 rounded-full w-full"
+              placeholder="Enter 4 digit pin number"
+              maxlength="4"
+            />
+            <button
+              id="cashout-btn"
+              class="btn btn-neutral mt-4 rounded-full text-[16px] bg-primary border-none"
+            >
+              Add Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <!-- cashOut -->
+    <section class="w-11/12 mx-auto pb-12 hidden">
       <h3 class="text-[18px] font-semibold mb-4">Cash Out</h3>
-      <div
-        class="card bg-base-100 w-full shadow rounded-2xl"
-      >
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
         <div class="card-body">
           <fieldset class="fieldset">
             <label class="label text-[14px] font-medium text-neutral mb-1"
@@ -124,7 +180,7 @@
               placeholder="Enter amount to withdraw"
             />
             <label class="label text-[14px] font-medium text-neutral mb-1"
-              >4 Digit Pin</label
+              >Pin Number</label
             >
             <input
               id="pin-input"
