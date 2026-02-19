@@ -26,7 +26,7 @@ document.getElementById('add-money-btn')
             const newHistory = document.createElement('div');
             newHistory.innerHTML = `
             <div class="bg-base-100 p-5 rounded-lg">
-            <p>Add money successful 
+            <p class="text-blue-500">Add money successful 
                 form ${bank}
                 at ${new Date()}</p>
             </div>

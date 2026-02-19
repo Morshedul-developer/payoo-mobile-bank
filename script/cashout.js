@@ -29,9 +29,7 @@ document.getElementById('cashout-btn')
             const newHistory = document.createElement('div');
             newHistory.innerHTML = `
             <div class="bg-base-100 p-5 rounded-lg">
-            <p>CashOut successful 
-                form ${agentNumber}
-                at ${new Date()}</p>
+            <p class="text-red-500">CashOut successful ${newBalance} tk form ${agentNumber} at ${new Date()}</p>
             </div>
             `;
             history.appendChild(newHistory);
