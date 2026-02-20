@@ -86,7 +86,7 @@
           <img src="./assets/opt-4.png" alt="" />
           <p>Get Bonus</p>
         </button>
-        <button class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
+        <button onclick="showOnly('pay-bill')" class="btn flex-col h-full px-4 py-5 btn-primary btn-soft">
           <img src="./assets/opt-5.png" alt="" />
           <p>Pay Bill</p>
         </button>
@@ -282,10 +282,68 @@
       </div>
      </section>
 
+    <!-- pay bill -->
+     <section id="pay-bill" class="w-11/12 mx-auto pb-12 hidden">
+      <h3 class="text-[18px] font-semibold mb-4">Pay Bill</h3>
+      <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Select To Pay</label
+            >
+            <select id="pay-bill-bank" class="select w-full bg-base-200 text-gray-500/90 rounded-full mb-2">
+              <option disabled selected>Select bank</option>
+              <option value="DBBL">DBBL</option>
+              <option value="AB Bank">AB Bank</option>
+              <option value="City Bank">City Bank</option>
+            </select>
+
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Biller Account Number</label
+            >
+            <input
+              id="biller-ac-number"
+              type="text"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Enter account number"
+              maxlength="11"
+              minlength="11"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Amount to Pay</label
+            >
+            <input
+              id="biller-amount"
+              type="number"
+              class="input bg-base-200 rounded-full mb-2 w-full"
+              placeholder="Add Amount to pay"
+            />
+            <label class="label text-[14px] font-medium text-neutral mb-1"
+              >Pin Number</label
+            >
+            <input
+              id="pin-biller"
+              type="password"
+              class="input bg-base-200 rounded-full w-full"
+              placeholder="Enter 4 digit pin number"
+              maxlength="4"
+            />
+            <button
+              id="pay-biller-btn"
+              class="btn btn-neutral mt-4 rounded-full text-[16px] bg-primary border-none"
+            >
+              Pay Now
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <script src="./script/machine.js"></script>
     <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/sendMoney.js"></script>
     <script src="./script/getBonus.js"></script>
+    <script src="./script/payBill.js"></script>
   </body>
 </html>
