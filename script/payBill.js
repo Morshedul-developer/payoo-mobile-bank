@@ -29,4 +29,16 @@ document.getElementById('pay-biller-btn')
         else {
             alert('Invalid PIN...')
         }
+
+        // transaction
+            const history = document.getElementById('history-container');
+            const newHistory = document.createElement('div');
+            newHistory.innerHTML = `
+            <div class="bg-base-100 p-5 rounded-lg">
+            <p class="text-blue-500">Bill paid successful ${amount} tk
+                form ${bank}
+                at ${new Date()}</p>
+            </div>
+            `;
+            history.appendChild(newHistory);
     });
