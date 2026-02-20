@@ -23,4 +23,14 @@ document.getElementById('send-money-btn')
             alert('Invalid PIN...');
             return;
         }
+
+        // transaction
+            const history = document.getElementById('history-container');
+            const newHistory = document.createElement('div');
+            newHistory.innerHTML = `
+            <div class="bg-base-100 p-5 rounded-lg">
+            <p class="text-blue-500">Money send ${amount} tk successfully done.</p>
+            </div>
+            `;
+            history.appendChild(newHistory);
     });
