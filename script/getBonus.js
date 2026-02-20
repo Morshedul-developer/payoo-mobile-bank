@@ -18,4 +18,14 @@ document.getElementById('get-bonus-btn')
         else {
             alert("Wrong coupon");
         }
+
+        // transaction
+            const history = document.getElementById('history-container');
+            const newHistory = document.createElement('div');
+            newHistory.innerHTML = `
+            <div class="bg-base-100 p-5 rounded-lg">
+            <p class="text-blue-500">'${coupon}' coupon added successfully done.</p>
+            </div>
+            `;
+            history.appendChild(newHistory);
     });
