@@ -18,7 +18,6 @@ document.getElementById('cashout-btn')
         }
 
         const pin = getValueFromInput('pin-cashout');
-        console.log(pin);
 
         if(pin == '1234') {
             alert('Cashout successful...');
