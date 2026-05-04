@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=700&size=40&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=💜+Payoo+Mobile+Bank;Your+Smart+Mobile+Banking+App" alt="Typing SVG" />
+# 💜 Payoo Mobile Bank
 
 <br/>
 
